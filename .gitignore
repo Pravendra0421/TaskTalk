@@ -1,0 +1,27 @@
+# Logs
+*.log
+logs/
+
+# Dependency folders
+backend/node_modules/
+Frontend/node_modules/
+
+# Build outputs
+Frontend/dist/
+Frontend/build/
+
+# Env files
+backend/.env
+Frontend/.env
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Coverage (optional)
+coverage/
