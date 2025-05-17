@@ -9,7 +9,7 @@ import aiRouter from "./routes/ai.routes.js"
 connectDb();
 const app=express();
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:'https://task-talk-beta.vercel.app/',
     credentials:true
 }
 ));
