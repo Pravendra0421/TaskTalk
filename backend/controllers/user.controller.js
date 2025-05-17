@@ -19,6 +19,7 @@ export const createUserController = async (req,res)=>{
     }
 }
 export const loginUserController = async(req,res)=>{
+    console.log("Login body:", req.body);
     const errors = validationResult(req);
     if(!errors.isEmpty()){
         return res.status(400).json({errors:errors.array()});
