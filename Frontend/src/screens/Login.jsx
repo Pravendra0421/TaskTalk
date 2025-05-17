@@ -18,9 +18,12 @@ const Login = () => {
       localStorage.setItem('token',res.data.token);
       setUser(res.data.user);
       navigate('/');
-    }).catch((err)=>{
-      console.log(err.res.data);
-    })
+    }).catch((err) => {
+  const msg = err.response?.data?.errors || "Login failed";
+  console.log("Login error:", msg);
+  alert(msg); // Show error to user
+});
+
   }
   return (
     <div className="min-h-screen flex items-center justify-center">
