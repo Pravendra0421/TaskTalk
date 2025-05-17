@@ -9,7 +9,7 @@ import aiRouter from "./routes/ai.routes.js"
 connectDb();
 const app=express();
 app.use(cors({
-  origin: 'https://task-talk-beta.vercel.app',
+  origin: 'https://tasktalk-frontend.onrender.com',
   credentials: true
 }));
 app.use(morgan('dev'));
